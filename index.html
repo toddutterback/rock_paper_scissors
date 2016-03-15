@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <TITLE>The Rock, Paper, Scissors!</TITLE>
+      <link rel='stylesheet' href='stylesheets/styles.css' />
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body class = 'container center'>
+    <div>
+      <h1>The Rock, Paper, Scissors!</h1>
+      <hr />
+    </div>
+    <div >
+      <h5>What's it going to be?</h5>
+      <a class='btn' onClick="Choice('rock')">Rock</a>
+      <a class='btn' onClick="Choice('paper')">Paper</a>
+      <a class='btn' onClick="Choice('sscissors')">Scissors</a><br>
+      <br />
+      <a class='btn' onClick="compare()">Let's Rumble!</a>
+      <br />
+      <input type='text' id="display"/>
+      <input type='text' id="compdisplay"/>
+      <input type='text' id="result"/>
+      <br />
+      <a class='btn' onClick="clearDisplay()">Clear Displays</a>
+    </div>
+    </div>
+
+    <script type ='text/javascript' src='javascripts/main.js'></script>
+  </body>
+</html>
