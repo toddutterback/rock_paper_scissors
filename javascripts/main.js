@@ -4,11 +4,11 @@ var compChoice = []
 function computerChoice(){
   compChoice= Math.random();
   if (compChoice < 0.34) {
-    compChoice = "rock";
+    compChoice = "Rock";
   } else if(compChoice <= 0.67) {
-    compChoice = "paper";
+    compChoice = "Paper";
   } else {
-    compChoice = "scissors";
+    compChoice = "Scissors";
   }
   compdisplay.value = compChoice
 } 
@@ -24,12 +24,12 @@ var compare = function()  {
   computerChoice()
   if (userChoice == compChoice) {
     result.value = "Tie! Try again.";
-  } else if (userChoice == "rock") {
-    result.value = compChoice == "scissors" ? "Rock wins" : "Paper wins";
-  } else if (userChoice=="paper") {
-    result.value = compChoice == "rock" ? "Paper wins": "Scissors wins";
-  } else if (userChoice == "scissors") {
-    result.value = compChoice == "paper" ? "Scissors wins" : "Rock wins";
+  } else if (userChoice == "Rock") {
+    result.value = compChoice == "Scissors" ? "Rock wins" : "Paper wins";
+  } else if (userChoice=="Paper") {
+    result.value = compChoice == "Rock" ? "Paper wins": "Scissors wins";
+  } else if (userChoice == "Scissors") {
+    result.value = compChoice == "Paper" ? "Scissors wins" : "Rock wins";
   }
 }
 

@@ -14,18 +14,28 @@
       <hr />
     </div>
     <div >
-      <h5>What's it going to be?</h5>
-      <a class='btn' onClick="Choice('rock')">Rock</a>
-      <a class='btn' onClick="Choice('paper')">Paper</a>
-      <a class='btn' onClick="Choice('sscissors')">Scissors</a><br>
+      <h4>What's it going to be?</h4>
+      <div class="button">
+        <button class="btn-large indigo darken-4" onClick="Choice('Rock')">Rock</button>
+        <button class="btn-large indigo darken-4" onClick="Choice('Paper')">Paper</button>
+        <button class="btn-large indigo darken-4" onClick="Choice('Scissors')">Scissors</button><br>
+      </div>
       <br />
-      <a class='btn' onClick="compare()">Let's Rumble!</a>
+      <button class="btn-large indigo darken-4" onClick="compare()">Let's Rumble!</button>
       <br />
-      <input type='text' id="display"/>
-      <input type='text' id="compdisplay"/>
-      <input type='text' id="result"/>
+      <div class="row">
+        <div class="">
+
+            <input class="center-align" type='text' id="display"/>
+            <br />
+            <input class="center-align" type='text' id="compdisplay"/>
+            <br />
+            <input class="center-align" type='text' id="result"/>
+         
+        </div>
+      </div>
       <br />
-      <a class='btn' onClick="clearDisplay()">Clear Displays</a>
+      <button class="btn-large indigo darken-4" onClick="clearDisplay()">Clear Displays</button>
     </div>
     </div>
 
